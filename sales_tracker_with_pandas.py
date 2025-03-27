@@ -24,3 +24,7 @@ plt.ylabel("Sales in Dollars")
 plt.title("Weekly Sales Performance")
 plt.xticks(rotation=45)
 plt.show()
+
+csv_filename = "sales_data.csv"
+df.to_csv(csv_filename, index = False)
+print(f"\nSales Data saved to {csv_filename}")
