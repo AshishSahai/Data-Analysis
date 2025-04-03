@@ -10,6 +10,7 @@ for region, quarters in region_sales.items():
     for quarter, sales in quarters.items():
         quarterly_sales[quarter] += sales
 
+
     #print(f"Total annual sales for {region} : {sum(quarter.values())}")
 #print(total_region_sales)
 
@@ -18,7 +19,9 @@ for region, total in total_region_sales.items():
     print(f"{region} : ${total}")
 
 print(f"\nBest performing region: {max(total_region_sales, key=total_region_sales.get)}")
-print(f"Worst performing region: {min(total_region_sales, key=total_region_sales.get)}")
+print(f"Worst performing region: {min(total_region_sales, key=total_region_sales.get)}\n")
+for quarter, sales in quarterly_sales.items():
+    print(f"{quarter}: {sales}")
 print(f"\nBest Quarter: {max(quarterly_sales, key=quarterly_sales.get)}")
 print(f"Worst Quarter: {min(quarterly_sales,key=quarterly_sales.get)}")
 #print(total_region_sales)
