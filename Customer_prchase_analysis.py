@@ -21,7 +21,7 @@ for region, total in total_region_sales.items():
 print(f"\nBest performing region: {max(total_region_sales, key=total_region_sales.get)}")
 print(f"Worst performing region: {min(total_region_sales, key=total_region_sales.get)}\n")
 for quarter, sales in quarterly_sales.items():
-    print(f"{quarter}: {sales}")
+    print(f"{quarter}: ${sales}")
 print(f"\nBest Quarter: {max(quarterly_sales, key=quarterly_sales.get)}")
 print(f"Worst Quarter: {min(quarterly_sales,key=quarterly_sales.get)}")
 #print(total_region_sales)
